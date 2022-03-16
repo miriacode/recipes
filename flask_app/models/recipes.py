@@ -34,7 +34,7 @@ class Recipe:
         print(result)
         rcp = result[0]
         #Changing date format
-        rcp['date_made'] = rcp['date_made'].strftime("%B %d, %Y")
+        rcp['date_made'] = rcp['date_made'].strftime("%B, %d, %Y")
         recipe = cls(rcp)
         return recipe
 
